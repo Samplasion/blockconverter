@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+}
+input {
+  min-height: 20px;
+}
+button#clear {
+  background-color: #f2f2f2;
+  border: 1.5px solid #f44336;
+  padding: 10px 24px;
+  transition-duration: 0.4s;
+}
+button#clear:hover {
+  background-color: #f44336;
+  color: #f2f2f2;
+}
+button#about {
+  background-color: #f2f2f2;
+  border: 1.5px solid #4CAF50;
+  padding: 10px 24px;
+  transition-duration: 0.4s;
+}
+button#about:hover {
+  background-color: #4CAF50;
+  color: #f2f2f2;
+}
+.result {
+  background-color: #fc0;
+  padding: 2px;
+  border-radius: 3px
+}
+button {
+  background-color: #f2f2f2;
+  border: 1.5px solid #008CBA;
+  padding: 10px 24px;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: #008CBA;
+  color: white;
+}
