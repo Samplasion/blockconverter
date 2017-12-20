@@ -2,9 +2,12 @@
 
 **A simple Nintendo Block to MB/GB converter.**
 
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
+This is a minimal Electron application based on the [BlockConverter-Ruby](https://github.com/Samplasion/BlockConverter-Ruby) Ruby gem.
 
-> This app contains a Dark Mode. To use it, go to the app's directory, go to `resources\app\` and edit the `index.html` file to link to the `style-dark.css` stylesheet rather than `style.css`.
+> This app contains a Dark Mode. To use it, go to the app's directory, then go to `resources\app\` and edit the `index.html` file to link to the `style-dark.css` stylesheet rather than `style.css`.
+
+![BC](https://raw.githubusercontent.com/Samplasion/blockconverter/master/docs/blockconverter-gui.PNG)
+> BlockConverter in its Dark Mode
 
 ## How To Use
 
@@ -21,21 +24,31 @@ npm install
 npm start
 ```
 
-Alteratively, you can build and run this software, by doing:
+Alternatively, you can build and run this software, by doing:
 
 ```bash
 # Clone this repository
 git clone https://github.com/samplasion/blockconverter
 # Go into the repository
 cd blockconverter
+# Install dependencies
+npm install
 # Build the app
 electron-packager .
 ```
 
 You'll find the software in `blockconverter-out`.This is particularly useful, as it builds an `.exe` ready to use.
 
-Finally, there's a prebuilt `.exe` **[here](http://www.mediafire.com/file/eqv1fnmmdsc7xg6/BlockConverter-win32-x64.rar)**.
+Finally, there's a prebuilt `.exe` **[here](http://www.mediafire.com/file/s9w0jy1m22bg8uv/blockconverter-win32-x64.rar)**.
 
 ## License
 
 [CC0 1.0 (Public Domain)](LICENSE.md)
+
+## Contributing
+
+You can contribute by translating this project. Just create a branch called as your language code [ex.: Italian -> it] and send a pull request. You can also improve others' translations.
+
+## Credits
+
+All the contents of this application were made by Samplasion.
