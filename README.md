@@ -30,7 +30,7 @@ cd blockconverter
 electron-packager .
 ```
 
-You'll find the software in `blockconverter-out\`.This is particularly useful, as it builds an `.exe` ready to use.
+You'll find the software in `blockconverter-out`.This is particularly useful, as it builds an `.exe` ready to use.
 
 Finally, there's a prebuilt `.exe` **[here](http://www.mediafire.com/file/eqv1fnmmdsc7xg6/BlockConverter-win32-x64.rar)**.
 
