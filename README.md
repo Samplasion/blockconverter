@@ -22,11 +22,17 @@ npm start
 Alteratively, you can build and run this software, by doing:
 
 ```bash
+# Clone this repository
+git clone https://github.com/samplasion/blockconverter
+# Go into the repository
+cd blockconverter
 # build
 electron-packager .
 ```
 
-This is particularly useful, as it builds an `.exe` ready to use
+You'll find the software in `blockconverter-out\`.This is particularly useful, as it builds an `.exe` ready to use.
+
+Finally, there's a prebuilt `.exe` **[here](http://www.mediafire.com/file/eqv1fnmmdsc7xg6/BlockConverter-win32-x64.rar)**.
 
 ## License
 
