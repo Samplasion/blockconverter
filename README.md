@@ -26,7 +26,7 @@ Alteratively, you can build and run this software, by doing:
 git clone https://github.com/samplasion/blockconverter
 # Go into the repository
 cd blockconverter
-# build
+# Build the app
 electron-packager .
 ```
 
