@@ -1,10 +1,10 @@
 # BlockConverter
 
-**Clone and run for a quick way to see Electron in action.**
+**A simple Nintendo Block to MB/GB converter.**
 
 This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
 
-## To Use
+## How To Use
 
 To clone and test this software, you'll need **[Git](https://git-scm.com)**, **[Node.js](https://nodejs.org/en/download/)** (which comes with **[npm](http://npmjs.com)**) and **[electron-packager](https://github.com/electron-userland/electron-packager)** installed on your computer. From your command line:
 
