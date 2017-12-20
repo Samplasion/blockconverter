@@ -4,7 +4,7 @@
 
 This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
 
-> This app contains a Dark Mode. To use it, go to the app's directory, go to `resources\app\` and edit the `index.html` file to link to the `style-daark.css` stylesheet rather than `style.css`.
+> This app contains a Dark Mode. To use it, go to the app's directory, go to `resources\app\` and edit the `index.html` file to link to the `style-dark.css` stylesheet rather than `style.css`.
 
 ## How To Use
 
