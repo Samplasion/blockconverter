@@ -26,7 +26,7 @@ Alteratively, you can build and run this software, by doing:
 electron-packager .
 ```
 
-This is particularly...
+This is particularly useful, as it builds an `.exe`1 ready to use
 
 ## License
 
