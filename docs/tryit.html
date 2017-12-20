@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BlockConverter</title>
+    <link rel="stylesheet" href="style-dark.css">
+  </head>
+  <body>
+    <h1>BlockConverter</h1>
+    <!-- <p>
+    We are using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.</p> -->
+    <p><input type="number" placeholder="Blocks" oninput="convBl(this.value, 'mbOut', 'gbOut', 'blOut')" onchange="convBl(this.value, 'mbOut', 'gbOut', 'blOut')" />
+      <input type="number" placeholder="MBs" oninput="convBl(this.value, 'blOut', 'gbOut', 'mbOut')" onchange="convBl(this.value, 'blOut', 'gbOut', 'mbOut')" />
+      <input type="number" placeholder="GBs" oninput="convGb(this.value, 'mbOut', 'blOut', 'gbOut')" onchange="convGb(this.value, 'mbOut', 'blOut', 'gbOut')" /></p>
+      <button onclick="clearAll('input', 'span')" id="clear">Clear All</button>
+    <p class="result">Blocks: <span id="blOut">0</span><br>
+      MBs: <span id="mbOut">0</span><br>
+      GBs: <span id="gbOut">0</span><br>
+    </p>
+    <button id="about">About</button>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+    <script type="text/javascript">
+    // MARK: functions
+    function convBl(bl, idMb, idGb, idBl) {
+      var mb = bl / 8; var gb = (bl / 8) / 1024;
+      document.getElementById(idMb).innerHTML = mb; document.getElementById(idGb).innerHTML = gb; document.getElementById(idBl).innerHTML = bl;
+    }
+    function convMb(mb, idBl, idGb, idMb) {
+      var bl = mb * 8; var gb = mb / 1024;
+      document.getElementById(idBl).innerHTML = bl; document.getElementById(idGb).innerHTML = gb; document.getElementById(idMb).innerHTML = mb;
+    }
+    function convGb(gb, idMb, idBl, idGb) {
+      var mb = gb * 1024; var bl = mb * 8;
+      document.getElementById(idMb).innerHTML = mb; document.getElementById(idBl).innerHTML = bl; document.getElementById(idGb).innerHTML = gb;
+    }
+    function clearAll(tags, tags2) {
+      for (var i = 0; i < document.getElementsByTagName(tags).length; i++) {
+        document.getElementsByTagName(tags)[i].value = "";
+      }
+      for (var i = 0; i < document.getElementsByTagName(tags2).length; i++) {
+        document.getElementsByTagName(tags2)[i].innerHTML = 0;
+      }
+    }
+    </script>
+    <script>
+    const electron = require('electron')
+    const app = electron.app
+
+    </script>
+    <script>
+    const BrowserWindow = require('electron').remote.BrowserWindow
+    const path = require('path')
+
+    const newWindowBtn = document.getElementById('about')
+
+    newWindowBtn.addEventListener('click', function (event) {
+      const modalPath = path.join('file://', __dirname, './about.html')
+      let win = new BrowserWindow({ width: 600, height: 329,})
+      win.on('close', function () { win = null })
+      win.loadURL(modalPath)
+      win.show()
+    })
+    </script>
+  </body>
+</html>
