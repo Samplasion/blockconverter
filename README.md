@@ -4,6 +4,8 @@
 
 This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
 
+> This app contains a Dark Mode. To use it, go to the app's directory, go to `resources\app\` and edit the `index.html` file to link to the `style-daark.css` stylesheet rather than `style.css`.
+
 ## How To Use
 
 To clone and test this software, you'll need **[Git](https://git-scm.com)**, **[Node.js](https://nodejs.org/en/download/)** (which comes with **[npm](http://npmjs.com)**) and **[electron-packager](https://github.com/electron-userland/electron-packager)** installed on your computer. From your command line:
